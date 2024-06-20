@@ -1,0 +1,37 @@
+{
+    "name": "duzhenye/hello",
+    "description": "Hello World",
+    "keywords": [
+        "forumkit"
+    ],
+    "type": "forumkit-extension",
+    "license": "MIT",
+    "require": {
+        "forumkit/core": "dev-main"
+    },
+    "authors": [
+        {
+            "name": "Forumkit",
+            "email": "info@forumkit.cn",
+            "role": "Duzhenye"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Duzhenye\\HelloPages\\": "src/"
+        }
+    },
+    "extra": {
+        "forumkit-extension": {
+            "title": "Hello Pages",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-h-square",
+                "backgroundColor": "#0F9D58",
+                "color": "#fff"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

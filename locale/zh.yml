@@ -1,0 +1,8 @@
+hello:
+
+  admin:
+    my_cool_key: 我的酷钥匙
+
+  site:
+    about: 关于我们
+    troubleshooting: 故障排除
