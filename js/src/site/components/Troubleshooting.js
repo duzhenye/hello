@@ -13,18 +13,26 @@ export default class Troubleshooting extends Page {
 
   view() {
     return m(".IndexPage", [
-      IndexPage.prototype.hero(),
+
       m(
         ".container",
-        m(".sideNavContainer", [
+        m(".IndexPageContainer", [
+
           m(
-            "nav.IndexPage-nav.sideNav",
-            m("ul", listItems(IndexPage.prototype.sidebarItems().toArray()))
+            "div.IndexPageBer.leftber",
+            m("div", IndexPage.prototype.sidebarItems().toArray())
           ),
+
           m(
-            ".IndexPage-results.sideNavOffset",
+            ".IndexPage-results.centerber",
             m("div.ContentPages", this.pageContent()),
           ),
+
+          m(
+            "div.IndexPageBer.rightbar",
+            m("div", IndexPage.prototype.rightbarItems().toArray())
+          ),
+
         ])
       ),
     ]);

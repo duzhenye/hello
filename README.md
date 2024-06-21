@@ -5,6 +5,7 @@
 Install with composer:
 
 ```sh
+composer require duzhenye/hello *@dev
 composer require duzhenye/hello:"*"
 ```
 

@@ -7,7 +7,7 @@ import LinkButton from 'forumkit/common/components/LinkButton';
 export default function () {
   
   // 在索引页面的侧边栏中添加一个指向标签页面的链接，以及一个包含所有标签的列表。
-  extend(IndexPage.prototype, 'navItems', function (items) {
+  extend(IndexPage.prototype, 'rightbarItems', function (items) {
 
     items.add(
       'sidebar-about',
@@ -29,7 +29,7 @@ export default function () {
       const currentYear = new Date().getFullYear();
 
       return (
-        <span className="CustomSidebarFooter">{currentYear} © Forumkit</span>
+        <span className="CustomSidebarFooter">© {currentYear} Forumkit</span>
       );
     }
 
